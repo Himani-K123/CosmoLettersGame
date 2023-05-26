@@ -14,5 +14,15 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0) * speed * Time.deltaTime;
         transform.position += movement;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("LetterObject"))
+        {
+            LetterObject letterObject = other.GetComponent<LetterObject>();
+            letterObject.SetRandomLetter();
+        }
+    }
+
 }
 
