@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f; // Adjust the movement speed as needed
+    public float speed = 500f; // Adjust the movement speed as needed
 
     void Update()
     {
@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0) * speed * Time.deltaTime;
-        transform.position += movement;
+        transform.Translate(movement, Space.World);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +23,6 @@ public class PlayerMovement : MonoBehaviour
             letterObject.SetRandomLetter();
         }
     }
-
 }
+
 
