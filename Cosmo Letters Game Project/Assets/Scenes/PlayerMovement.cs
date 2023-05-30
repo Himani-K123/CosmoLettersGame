@@ -15,12 +15,16 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movement, Space.World);
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("LetterObject"))
+        Debug.Log("Collided"); 
+        if (collision.gameObject.CompareTag("Letter"))
         {
-            LetterObject letterObject = other.GetComponent<LetterObject>();
-            letterObject.SetRandomLetter();
+            LetterObject letter = collision.gameObject.GetComponentInChildren<LetterObject>();
+            if (letter != null)
+            {
+                letter.RandomizeLetterAndLocation();
+            }
         }
     }
 }
