@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movement, Space.World);
     }
 
-    void OnCollisionEnter(Collision collision)
+    /*void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collided"); 
         if (collision.gameObject.CompareTag("Letter"))
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
                 letter.RandomizeLetterAndLocation();
             }
         }
-    }
+    }*/
 }
 
 

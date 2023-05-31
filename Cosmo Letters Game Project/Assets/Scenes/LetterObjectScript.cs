@@ -6,14 +6,6 @@ public class LetterObject : MonoBehaviour
 {
     public char[] letters = { 'A', 'B', 'C', 'D', 'E' }; // Array of letters
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Letter"))
-        {
-            RandomizeLetterAndLocation();
-        }
-    }
-
     public void RandomizeLetterAndLocation()
     {
         Debug.Log("Randomize"); 
