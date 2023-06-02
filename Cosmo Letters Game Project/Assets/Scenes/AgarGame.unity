@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 463080855}
   - component: {fileID: 463080854}
   - component: {fileID: 463080856}
+  - component: {fileID: 463080857}
   m_Layer: 0
   m_Name: LetterObject
   m_TagString: Letter
@@ -615,6 +616,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &463080857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463080851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dad804e8ff94e4b97c6c93abb1ed22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letters: 41004200430044004500
 --- !u!1 &1531842228
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4986, y: -712}
+  m_AnchoredPosition: {x: 1192, y: -355}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531842230

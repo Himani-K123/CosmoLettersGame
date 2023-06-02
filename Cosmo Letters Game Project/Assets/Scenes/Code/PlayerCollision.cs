@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    void OnCollisionEnter()
+    void OnCollisionEnter2D()
     {
         Debug.Log("Collided");
     }

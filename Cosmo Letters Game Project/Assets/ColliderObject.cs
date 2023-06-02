@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LetterObject : MonoBehaviour
+public class ColliderObject : MonoBehaviour
 {
     public char[] letters = { 'A', 'B', 'C', 'D', 'E' }; // Array of letters
 
@@ -16,5 +16,4 @@ public class LetterObject : MonoBehaviour
         TextMesh textMesh = GetComponent<TextMesh>();
         textMesh.text = randomLetter.ToString();
     }
-
 }

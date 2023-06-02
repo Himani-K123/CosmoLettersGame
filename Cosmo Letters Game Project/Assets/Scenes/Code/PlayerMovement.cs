@@ -15,18 +15,15 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movement, Space.World);
     }
 
-    /*void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collided"); 
-        if (collision.gameObject.CompareTag("Letter"))
+        Debug.Log("IfStatemnent");
+        ColliderObject letter = collision.gameObject.GetComponentInChildren<ColliderObject>();
+        if (letter != null)
         {
-            LetterObject letter = collision.gameObject.GetComponentInChildren<LetterObject>();
-            if (letter != null)
-            {
-                letter.RandomizeLetterAndLocation();
-            }
+            letter.RandomizeLetterAndLocation();
         }
-    }*/
+    }
 }
 
 
