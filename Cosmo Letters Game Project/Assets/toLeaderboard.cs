@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class toInstructionScreen : MonoBehaviour
+public class toLeaderboard : MonoBehaviour
 {
-    public void instructionMenu()
+    public void leaderboardScreen()
     {
-        SceneManager.LoadScene("InstructionScreen", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Leaderboard", LoadSceneMode.Additive);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Back()
