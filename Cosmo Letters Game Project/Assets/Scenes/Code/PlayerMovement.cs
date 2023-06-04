@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("IfStatemnent");
         ColliderObject letter = collision.gameObject.GetComponentInChildren<ColliderObject>();
         if (letter != null)
         {
