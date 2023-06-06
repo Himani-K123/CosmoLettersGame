@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementA : MonoBehaviour
 {
     public float speed = 500f; // Adjust the movement speed as needed
 

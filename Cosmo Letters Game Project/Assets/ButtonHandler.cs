@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ButtonHandler : MonoBehaviour
 {
-    public InputHandler inputHandler;
+    //public InputHandler inputHandler;
 
-    public void OnButtonClick()
-    {
-        inputHandler.HandleInput();
-    }
+    //public void OnButtonClick()
+    //{
+        //inputHandler.HandleInput();
+    //}
 }

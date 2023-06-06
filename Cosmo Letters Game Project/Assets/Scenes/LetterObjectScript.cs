@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LetterObject : MonoBehaviour
+public class LetterObjectScript : MonoBehaviour
 {
     public char[] letters = { 'A', 'B', 'C', 'D', 'E' }; // Array of letters
 
