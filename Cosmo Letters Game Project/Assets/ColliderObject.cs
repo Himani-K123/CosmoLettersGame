@@ -20,7 +20,6 @@ public class ColliderObject : MonoBehaviour
         inventory.Add(char.Parse(textMesh.text));
         string output = "Inventory: " + string.Join(", ", inventory);
         Debug.Log(output);
-        CharListHolder.charList = inventory;
 
         int randomIndex = Random.Range(0, letters.Length);
         char randomLetter = letters[randomIndex];
