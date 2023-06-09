@@ -1,13 +1,14 @@
+/*
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using System.Collections.Generic;
 
 public class ButtonSwap : MonoBehaviour
 {
-    public string ScrabbleScreen; // The name of the scene you want to load
+  //  public string ScrabbleScreen; // The name of the scene you want to load
 
-    public void OnButtonClick()
+    public void swapScreen()
     {
         // Convert char list to string
         List<char> charList = ColliderObject.inventory;
@@ -17,8 +18,31 @@ public class ButtonSwap : MonoBehaviour
         PlayerPrefs.SetString("CharListData", charListData);
 
         // Load the target scene
-        SceneManager.LoadScene(ScrabbleScreen);
+       // SceneManager.LoadScene(ScrabbleScreen);
+        SceneManager.LoadScene("ScrabbleGame", LoadSceneMode.Additive);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
 
+*/
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
+public class ButtonSwap : MonoBehaviour
+{
+    public void SwapScreen()
+    {
+        SceneManager.LoadScene("ScrabbleGame", LoadSceneMode.Additive);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+}
