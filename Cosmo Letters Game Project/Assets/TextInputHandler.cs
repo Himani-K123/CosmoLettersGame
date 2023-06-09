@@ -7,6 +7,7 @@ using TMPro;
 public class TextInputHandler : MonoBehaviour
 {
     public TMP_InputField inputField;
+    public WordChecker wordChecker;
 
     public void StoreText()
     {
@@ -20,7 +21,15 @@ public class TextInputHandler : MonoBehaviour
         string enteredText = inputField.text;
         Debug.Log("Submitted Text: " + enteredText);
         // Perform any actions with the entered text here
-    }  
+
+        char[] charList = { 'a', 'b', 'c', 'd', 'e' };
+
+        bool isMadeOfChars = wordChecker.CheckWord(enteredText, charList);
+        Debug.Log("Word is made of characters: " + isMadeOfChars);
+
+        // Reset the input field's text
+        inputField.text = "";
+    }
 
 
 }
