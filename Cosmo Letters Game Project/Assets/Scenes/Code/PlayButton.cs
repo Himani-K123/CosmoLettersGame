@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
-    public void playGame()
+    public void PlayGame()
     {
         SceneManager.LoadScene("PlayMenu", LoadSceneMode.Additive);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -13,5 +13,10 @@ public class PlayButton : MonoBehaviour
     public void Back()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void Test()
+    {
+        Debug.Log("Test");
     }
 }

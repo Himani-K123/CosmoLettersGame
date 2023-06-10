@@ -24,6 +24,8 @@ public class TextInputHandler : MonoBehaviour
 
         char[] charList = { 'a', 'b', 'c', 'd', 'e' };
 
+        // Debug.Log("Hello World");
+
         bool isMadeOfChars = wordChecker.CheckWord(enteredText, charList);
         Debug.Log("Word is made of characters: " + isMadeOfChars);
 
