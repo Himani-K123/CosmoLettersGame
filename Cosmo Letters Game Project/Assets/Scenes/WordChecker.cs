@@ -25,13 +25,15 @@ public class WordChecker : MonoBehaviour
         {
             if (!charList.Contains(c))
             {
+                Debug.Log("Character not found in the list");
                 return false; // Character not found in the list
             }
         }
 
         // Check if the word is in the Scrabble dictionary
-        if (!scrabbleDictionary.Contains(word.ToLower()))
+        if (!scrabbleDictionary.Contains(word.ToUpper()))
         {
+            Debug.Log("Word not found in the Scrabble dictionary");
             return false; // Word not found in the Scrabble dictionary
         }
 
