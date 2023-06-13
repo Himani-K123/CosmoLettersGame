@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 82103231}
   - component: {fileID: 82103230}
   - component: {fileID: 82103229}
+  - component: {fileID: 82103232}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -206,7 +207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 82103230}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 82103232}
+        m_TargetAssemblyTypeName: ToAgarGame, Assembly-CSharp
+        m_MethodName: AgarGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &82103230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +258,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82103227}
   m_CullTransparentMesh: 1
+--- !u!114 &82103232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82103227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7096eb67fe02b431a92acf2843056d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354471718
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +712,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'In the hard option, you will have 15 seconds to obtain letters. And you
-    will have 30 minutes to create words with the letters you collected.
+    will have 30 seconds to create words with the letters you collected.
 
 '
   m_isRightToLeft: 0
@@ -916,6 +941,7 @@ GameObject:
   - component: {fileID: 793136989}
   - component: {fileID: 793136988}
   - component: {fileID: 793136987}
+  - component: {fileID: 793136990}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -987,7 +1013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 793136988}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 793136990}
+        m_TargetAssemblyTypeName: ToAgarGame, Assembly-CSharp
+        m_MethodName: AgarGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &793136988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1064,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793136985}
   m_CullTransparentMesh: 1
+--- !u!114 &793136990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793136985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7096eb67fe02b431a92acf2843056d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &952547043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,6 +1638,7 @@ GameObject:
   - component: {fileID: 1873541755}
   - component: {fileID: 1873541754}
   - component: {fileID: 1873541753}
+  - component: {fileID: 1873541756}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1659,7 +1710,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1873541754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1873541756}
+        m_TargetAssemblyTypeName: ToAgarGame, Assembly-CSharp
+        m_MethodName: AgarGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1873541754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1698,6 +1761,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873541751}
   m_CullTransparentMesh: 1
+--- !u!114 &1873541756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873541751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7096eb67fe02b431a92acf2843056d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1913278440
 GameObject:
   m_ObjectHideFlags: 0
