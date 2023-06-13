@@ -8,6 +8,7 @@ public class TextInputHandler : MonoBehaviour
 {
     public TMP_InputField inputField;
     public WordChecker wordChecker;
+    public PopupMessageTMP popupMessage;
 
     public void StoreText()
     {
@@ -17,21 +18,38 @@ public class TextInputHandler : MonoBehaviour
     }
 
     public void SubmitText()
-    {
-        string enteredText = inputField.text;
-        Debug.Log("Submitted Text: " + enteredText);
-        // Perform any actions with the entered text here
+{
+    string enteredText = inputField.text;
+    Debug.Log("Submitted Text: " + enteredText);
+    // Perform any actions with the entered text here
 
-        char[] charList = { 'a', 'b', 'c', 'd', 'e' };
+    char[] charList = { 'a', 'b', 'c', 'd', 'e' };
 
-        // Debug.Log("Hello World");
+    bool isMadeOfChars = wordChecker.CheckWord(enteredText, charList);
+    Debug.Log("Word is made of characters: " + isMadeOfChars);
 
-        bool isMadeOfChars = wordChecker.CheckWord(enteredText, charList);
-        Debug.Log("Word is made of characters: " + isMadeOfChars);
+    wordChecker.onCharacterInvalid += ShowInvalidCharacterMessage;
+    wordChecker.onWordInvalid += ShowInvalidWordMessage;
+    wordChecker.onWordValid += ShowValidWordMessage;
 
-        // Reset the input field's text
-        inputField.text = "";
-    }
+    // Reset the input field's text
+    inputField.text = "";
+}
 
+private void ShowInvalidCharacterMessage(string message)
+{
+    popupMessage.ShowMessage(message);
+}
+
+private void ShowInvalidWordMessage(string message)
+{
+    popupMessage.ShowMessage(message);
+}
+
+private void ShowValidWordMessage(string message)
+{
+    popupMessage.ShowMessage(message);
+}
 
 }
+
