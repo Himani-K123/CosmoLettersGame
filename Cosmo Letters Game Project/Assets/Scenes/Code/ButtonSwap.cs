@@ -7,7 +7,7 @@ public class ButtonSwap : MonoBehaviour
 {
   //  public string ScrabbleScreen; // The name of the scene you want to load
 
-    public void swapScreen()
+    public void SwapScreen()
     {
         // Convert char list to string
         List<char> charList = ColliderObject.inventory;
