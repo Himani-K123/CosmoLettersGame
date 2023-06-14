@@ -9,15 +9,15 @@ public class TimerController : MonoBehaviour
     private bool isTimerActive; // Flag to track the timer state
 
     private Text timerText; // Reference to the timer text component
-    private Button buttonToClick; // Reference to the button to be clicked
+    private Button legacyButton; // Reference to the legacy button to be clicked
 
     private void Start()
     {
         // Get the reference to the timer text component
         timerText = GetComponentInChildren<Text>();
 
-        // Get the reference to the button named "button"
-        buttonToClick = GameObject.Find("Button").GetComponent<Button>();
+        // Get the reference to the legacy button named "Button (Legacy)"
+        legacyButton = GameObject.Find("Button (Legacy)").GetComponent<Button>();
 
         // Start the timer
         timer = timerDuration;
@@ -41,8 +41,8 @@ public class TimerController : MonoBehaviour
                 // Stop the timer
                 isTimerActive = false;
 
-                // Trigger the button click
-                buttonToClick.onClick.Invoke();
+                // Trigger the legacy button click
+                legacyButton.onClick.Invoke();
 
                 // You can add any desired logic here after the timer reaches zero
             }
@@ -55,4 +55,3 @@ public class TimerController : MonoBehaviour
         isTimerActive = false;
     }
 }
-
