@@ -17,6 +17,13 @@ public class TextInputHandler : MonoBehaviour
         Debug.Log(enteredText);
     }
 
+    public void Start()
+    {
+        wordChecker.onCharacterInvalid += ShowInvalidCharacterMessage;
+        wordChecker.onWordInvalid += ShowInvalidWordMessage;
+        wordChecker.onWordValid += ShowValidWordMessage;
+    }
+
     public void SubmitText()
 {
     string enteredText = inputField.text;
@@ -27,10 +34,6 @@ public class TextInputHandler : MonoBehaviour
 
     bool isMadeOfChars = wordChecker.CheckWord(enteredText, charList);
     Debug.Log("Word is made of characters: " + isMadeOfChars);
-
-    wordChecker.onCharacterInvalid += ShowInvalidCharacterMessage;
-    wordChecker.onWordInvalid += ShowInvalidWordMessage;
-    wordChecker.onWordValid += ShowValidWordMessage;
 
     // Reset the input field's text
     inputField.text = "";
