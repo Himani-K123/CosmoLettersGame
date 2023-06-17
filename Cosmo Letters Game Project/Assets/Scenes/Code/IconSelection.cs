@@ -12,6 +12,8 @@ public class IconSelection : MonoBehaviour
         if (iconImage != null)
         {
             chosenIcon = iconImage.sprite;
+            GameManager gameManager = GameManager.Instance;
+            gameManager.UserIconSelection = chosenIcon;
             Debug.Log("Chosen Icon: " + chosenIcon.name);
         }
         else
