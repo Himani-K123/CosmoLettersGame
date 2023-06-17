@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UsernameScreen.unity
     guid: b40331e13bf074e64997cbec93408a8f
+  - enabled: 1
+    path: Assets/Scenes/PersistentScene.unity
+    guid: 514721734f2646646b3214b41f66ffa9
   m_configObjects: {}

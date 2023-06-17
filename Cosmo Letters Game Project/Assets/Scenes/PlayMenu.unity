@@ -136,9 +136,8 @@ GameObject:
   - component: {fileID: 82103230}
   - component: {fileID: 82103229}
   - component: {fileID: 82103232}
-  - component: {fileID: 82103233}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,8 +208,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82103233}
-        m_TargetAssemblyTypeName: ToUserScreen, Assembly-CSharp
+      - m_Target: {fileID: 82103232}
+        m_TargetAssemblyTypeName: toUsernameScreenMedium, Assembly-CSharp
         m_MethodName: UsernameScreen
         m_Mode: 1
         m_Arguments:
@@ -268,19 +267,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 82103227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7096eb67fe02b431a92acf2843056d5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &82103233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82103227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732ff13eb7ae04bd5b5f2a822e33a787, type: 3}
+  m_Script: {fileID: 11500000, guid: 87b747b6c5fb38a40a8948d74281c95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &248511877
@@ -1200,9 +1187,8 @@ GameObject:
   - component: {fileID: 793136988}
   - component: {fileID: 793136987}
   - component: {fileID: 793136990}
-  - component: {fileID: 793136991}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1273,8 +1259,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 793136991}
-        m_TargetAssemblyTypeName: ToUserScreen, Assembly-CSharp
+      - m_Target: {fileID: 793136990}
+        m_TargetAssemblyTypeName: toUsernameScreenHard, Assembly-CSharp
         m_MethodName: UsernameScreen
         m_Mode: 1
         m_Arguments:
@@ -1332,19 +1318,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 793136985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7096eb67fe02b431a92acf2843056d5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &793136991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793136985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732ff13eb7ae04bd5b5f2a822e33a787, type: 3}
+  m_Script: {fileID: 11500000, guid: 30b86fe2a85e10040801a928f757efd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &830380326
@@ -1575,7 +1549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1189831253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,9 +1960,8 @@ GameObject:
   - component: {fileID: 1873541754}
   - component: {fileID: 1873541753}
   - component: {fileID: 1873541756}
-  - component: {fileID: 1873541757}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2059,8 +2032,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1873541757}
-        m_TargetAssemblyTypeName: ToUserScreen, Assembly-CSharp
+      - m_Target: {fileID: 1873541756}
+        m_TargetAssemblyTypeName: toUsernameScreenEasy, Assembly-CSharp
         m_MethodName: UsernameScreen
         m_Mode: 1
         m_Arguments:
@@ -2118,19 +2091,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1873541751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7096eb67fe02b431a92acf2843056d5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1873541757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873541751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732ff13eb7ae04bd5b5f2a822e33a787, type: 3}
+  m_Script: {fileID: 11500000, guid: 2706ecbd76c29c34dbc749eb8ef15b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1913278440
@@ -2293,7 +2254,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029123239}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &2029123241
 Camera:
   m_ObjectHideFlags: 0
