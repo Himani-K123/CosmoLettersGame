@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
     // User's name and selection variables
     private string userName;
-    private string userIconSelection;
+    private Sprite userIconSelection;
     private int time;
 
     // Getter for the instance
@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public string UserName { get { return userName; } set { userName = value; } }
 
     // Getter and setter for the user's selection
-    public string UserSelection { get { return userIconSelection; } set { userIconSelection = value; } }
+    public Sprite UserIconSelection { get { return userIconSelection; } set { userIconSelection = value; } }
 
     public int Time { get { return time; } set { time = value; } }
 
