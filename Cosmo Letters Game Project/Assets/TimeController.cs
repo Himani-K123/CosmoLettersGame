@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class TimerController : MonoBehaviour
+public class TimeController : MonoBehaviour
 {
     private GameManager gameManager;
     private float timerDuration; // Duration of the timer in seconds
@@ -30,7 +30,7 @@ public class TimerController : MonoBehaviour
         timerText = GetComponentInChildren<TMP_Text>();
 
         // Get the reference to the TextMeshPro button component
-        tmpButton = GameObject.Find("Button").GetComponent<Button>();
+        tmpButton = GameObject.Find("Timer").GetComponent<Button>();
 
         // Attach the button click event listener
         tmpButton.onClick.AddListener(OnButtonClicked);

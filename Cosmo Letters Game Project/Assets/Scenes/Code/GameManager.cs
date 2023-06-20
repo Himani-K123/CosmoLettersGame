@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,9 +8,12 @@ public class GameManager : MonoBehaviour
 
     // User's name and selection variables
     private string userName;
-    private Sprite userIconSelection; // Changed data type to Sprite
+    private Sprite userIconSelection;
     private float time;
     private string userInventory;
+
+    // Leaderboard variables
+    private List<string> leaderboard;
 
     // Getter for the instance
     public static GameManager Instance { get { return instance; } }
@@ -18,11 +22,14 @@ public class GameManager : MonoBehaviour
     public string UserName { get { return userName; } set { userName = value; } }
 
     // Getter and setter for the user's selection
-    public Sprite UserIconSelection { get { return userIconSelection; } set { userIconSelection = value; } } // Changed data type to Sprite
+    public Sprite UserIconSelection { get { return userIconSelection; } set { userIconSelection = value; } }
 
     public float Time { get { return time; } set { time = value; } }
 
     public string UserInventory { get { return userInventory; } set { userInventory = value; } }
+
+    // Getter for the leaderboard
+    public List<string> Leaderboard { get { return leaderboard; } }
 
     private void Awake()
     {
@@ -34,5 +41,7 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(this.gameObject);
+
+        leaderboard = new List<string>();
     }
 }
