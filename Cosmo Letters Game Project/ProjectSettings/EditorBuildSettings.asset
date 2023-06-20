@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PersistentScene.unity
     guid: 514721734f2646646b3214b41f66ffa9
+  - enabled: 1
+    path: Assets/Scenes/LearningMode.unity
+    guid: 893278ef2ac2b9c4ab823ba319c530a5
   m_configObjects: {}
