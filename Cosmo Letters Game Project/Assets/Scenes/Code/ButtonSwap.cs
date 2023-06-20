@@ -12,12 +12,9 @@ public class ButtonSwap : MonoBehaviour
         // Convert char list to string
         List<char> charList = ColliderObject.inventory;
         string charListData = new string(charList.ToArray());
+        GameManager gameManager = GameManager.Instance;
+        gameManager.UserInventory = charListData;
 
-        // Store the char list data in PlayerPrefs
-        PlayerPrefs.SetString("CharListData", charListData);
-
-        // Load the target scene
-       // SceneManager.LoadScene(ScrabbleScreen);
         SceneManager.LoadScene("ScrabbleGame", LoadSceneMode.Additive);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

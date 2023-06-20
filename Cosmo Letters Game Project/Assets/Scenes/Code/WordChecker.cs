@@ -9,6 +9,7 @@ public class WordChecker : MonoBehaviour
     public Action<string> onWordValid; // Event or delegate to handle valid word
     public Action<string> onWordInvalid; // Event or delegate to handle invalid word
     public Action<string> onCharacterInvalid; // Event or delegate to handle invalid character
+    public static int score = 0;
 
     private HashSet<string> scrabbleDictionary;
 
@@ -79,7 +80,8 @@ public bool CheckWord(string word, char[] charList)
 
     // Add the word to the set of previous words
     previousWords.Add(word);
-
+    
+    score++;
     return true; // Word is made up of characters from the list, is in the dictionary, and is not a repeated word
 }
 

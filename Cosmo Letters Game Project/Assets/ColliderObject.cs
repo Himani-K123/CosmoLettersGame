@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ColliderObject : MonoBehaviour
 {
@@ -18,8 +19,6 @@ public class ColliderObject : MonoBehaviour
     {
         TextMesh textMesh = GetComponent<TextMesh>();
         inventory.Add(char.Parse(textMesh.text));
-        string output = "Inventory: " + string.Join(", ", inventory);
-        Debug.Log(output);
 
         int randomIndex = Random.Range(0, letters.Length);
         char randomLetter = letters[randomIndex];

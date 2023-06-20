@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
 {
-    public float timerDuration = 60f; // Duration of the timer in seconds
+    private GameManager gameManager;
+    private float timerDuration; // Duration of the timer in seconds
 
     private float timer; // Current value of the timer
     private bool isTimerActive; // Flag to track the timer state
@@ -13,6 +14,17 @@ public class TimerController : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
+
+        if (gameManager != null)
+        {
+            timerDuration = gameManager.Time;
+        }
+        else
+        {
+            timerDuration = 60f;
+        }
+
         // Get the reference to the timer text component
         timerText = GetComponentInChildren<Text>();
 

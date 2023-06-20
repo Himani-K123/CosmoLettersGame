@@ -7,8 +7,9 @@ public class GameManager : MonoBehaviour
 
     // User's name and selection variables
     private string userName;
-    private Sprite userIconSelection;
-    private int time;
+    private Sprite userIconSelection; // Changed data type to Sprite
+    private float time;
+    private string userInventory;
 
     // Getter for the instance
     public static GameManager Instance { get { return instance; } }
@@ -17,9 +18,11 @@ public class GameManager : MonoBehaviour
     public string UserName { get { return userName; } set { userName = value; } }
 
     // Getter and setter for the user's selection
-    public Sprite UserIconSelection { get { return userIconSelection; } set { userIconSelection = value; } }
+    public Sprite UserIconSelection { get { return userIconSelection; } set { userIconSelection = value; } } // Changed data type to Sprite
 
-    public int Time { get { return time; } set { time = value; } }
+    public float Time { get { return time; } set { time = value; } }
+
+    public string UserInventory { get { return userInventory; } set { userInventory = value; } }
 
     private void Awake()
     {
