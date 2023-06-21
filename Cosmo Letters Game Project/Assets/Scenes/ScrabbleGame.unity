@@ -5800,7 +5800,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 873791994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4309f4cd6e68e104ba2ef330315934f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c69cf07404344f1a967bf621e96d629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 873791996}
@@ -6882,7 +6882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1257970013}
   wordChecker: {fileID: 876517443}
-  popupMessage: {fileID: 873791998}
+  popupMessage: {fileID: 0}
 --- !u!4 &1873046151
 Transform:
   m_ObjectHideFlags: 0
