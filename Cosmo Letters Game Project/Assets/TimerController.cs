@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
 {
-    private GameManager gameManager;
+    private GameManage gameManage;
     private float timerDuration; // Duration of the timer in seconds
 
     private float timer; // Current value of the timer
@@ -15,11 +15,11 @@ public class TimerController : MonoBehaviour
 
     private void Start()
     {
-        gameManager = GameManager.Instance;
+        gameManage = GameManage.Instance;
 
-        if (gameManager != null)
+        if (gameManage != null)
         {
-            timerDuration = gameManager.Time;
+            timerDuration = gameManage.Time;
         }
         else
         {

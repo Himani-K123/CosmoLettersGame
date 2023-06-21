@@ -8,15 +8,26 @@ public class toUsernameScreenHard : MonoBehaviour
     public void UsernameScreen()
     {
         Debug.Log("Clicked");
-        GameManager gameManager = GameManager.Instance;
-        gameManager.Time = 15;
-        SceneManager.LoadScene("UsernameScreen", LoadSceneMode.Additive);
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameManage gameManage = GameManage.Instance;
+
+        if (gameManage != null)
+        {
+            gameManage.Time = 15;
+            gameManage.LOD = "Hard";
+            SceneManager.LoadScene("UsernameScreen", LoadSceneMode.Additive);
+        }
+        else
+        {
+            Debug.LogError("GameManage instance is null!");
+        }
     }
+
     public void Back()
-    {
+    { 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
 }
 
+
+;

@@ -10,8 +10,8 @@ public class NameInput : MonoBehaviour
     public void SaveName()
     {
         playerName = inputField.text;
-        GameManager gameManager = GameManager.GetInstance();
-        gameManager.UserName = playerName;
+        GameManage gameManage = GameManage.Instance;
+        gameManage.UserName = playerName;
         Debug.Log("Player Name: " + playerName);
     }
 }
