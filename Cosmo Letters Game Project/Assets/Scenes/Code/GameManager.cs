@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour
+// You don't have to inherit Monobehavior if you aren't using the script as a component
+public class GameManager
 {
     // Singleton instance
     private static GameManager instance;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     private string userInventory;
 
     // Leaderboard variables
-    private List<string> leaderboard;
+    private List<string> leaderboard = new List<string>();
 
     // Getter for the instance
     public static GameManager Instance { get { return instance; } }
@@ -31,17 +32,15 @@ public class GameManager : MonoBehaviour
     // Getter for the leaderboard
     public List<string> Leaderboard { get { return leaderboard; } }
 
-    private void Awake()
+    // Call this method to get a reference to the singleton.
+    // E.g. GameManager singleton = GameManager.GetInstance();
+    public static GameManager GetInstance()
     {
-        if (instance != null && instance != this)
+        if (instance == null)
         {
-            Destroy(this.gameObject);
-            return;
+            instance = new GameManager();
         }
 
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
-
-        leaderboard = new List<string>();
+        return instance;
     }
 }
