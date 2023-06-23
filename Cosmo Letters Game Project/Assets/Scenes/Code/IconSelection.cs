@@ -19,6 +19,7 @@ public class IconSelection : MonoBehaviour
             gameManage.UserIconSelection = chosenIcon;
             Debug.Log("Chosen Icon: " + chosenIcon.name);
             SceneManager.LoadScene("AgarGame", LoadSceneMode.Additive);
+            SceneManager.UnloadScene("UsernameScreen");
         }
         else
         {

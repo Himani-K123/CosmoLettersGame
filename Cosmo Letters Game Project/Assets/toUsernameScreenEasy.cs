@@ -15,6 +15,7 @@ public class toUsernameScreenEasy : MonoBehaviour
             gameManage.Time = 45f;
             gameManage.LOD = "Easy";
             SceneManager.LoadScene("UsernameScreen", LoadSceneMode.Additive);
+            SceneManager.UnloadScene("PlayMenu");
         }
         else
         {
