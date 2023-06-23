@@ -18,7 +18,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         Score1 = WordChecker.score;
-        messageText.text = "Score:" + Score1;
+        messageText.text = Score1.ToString();
     }
 }
 
