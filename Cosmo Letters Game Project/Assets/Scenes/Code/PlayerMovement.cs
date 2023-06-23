@@ -5,6 +5,25 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 500f; // Adjust the movement speed as needed
+    private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
+    private GameManage gameManage;
+
+    public Sprite rocket; // Reference to the "rocket" sprite
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
+        gameManage = GameManage.Instance;
+
+        if (gameManage != null && gameManage.UserIconSelection != null)
+        {
+            spriteRenderer.sprite = gameManage.UserIconSelection;
+        }
+        else
+        {
+            spriteRenderer.sprite = rocket;
+        }
+    }
 
     void Update()
     {
@@ -24,5 +43,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
-

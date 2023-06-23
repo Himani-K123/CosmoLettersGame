@@ -1,5 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class IconSelection : MonoBehaviour
 {
@@ -15,6 +18,7 @@ public class IconSelection : MonoBehaviour
             GameManage gameManage = GameManage.Instance;
             gameManage.UserIconSelection = chosenIcon;
             Debug.Log("Chosen Icon: " + chosenIcon.name);
+            SceneManager.LoadScene("AgarGame", LoadSceneMode.Additive);
         }
         else
         {

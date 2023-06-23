@@ -6,7 +6,7 @@ using TMPro;
 public class Score : MonoBehaviour
 {
     public TMP_Text messageText;
-    private int Score1; // Moved the declaration here
+    public static int Score1; // Moved the declaration here
 
     // Start is called before the first frame update
     void Start()

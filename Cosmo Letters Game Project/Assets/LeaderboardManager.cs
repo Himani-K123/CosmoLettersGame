@@ -10,11 +10,12 @@ public class LeaderboardManager : MonoBehaviour
     void Start()
     {
         leaderboard = new List<LeaderboardEntry>(); // Initialize the leaderboard list
+        GameManage gameManage = GameManage.Instance;
 
         // Example usage
-        string name = "John";
-        int score = 100;
-        int difficultyLevel = 2;
+        string name = gameManage.UserName;
+        int score = gameManage.Score;
+        string difficultyLevel = gameManage.LOD;
 
         LeaderboardEntry entry = new LeaderboardEntry(name, score, difficultyLevel);
         leaderboard.Add(entry); // Add the entry to the leaderboard list
@@ -25,21 +26,15 @@ public class LeaderboardManager : MonoBehaviour
             Debug.Log(leaderboardEntry.ToString());
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
 
 public class LeaderboardEntry
 {
     public string Name { get; private set; }
     public int Score { get; private set; }
-    public int DifficultyLevel { get; private set; }
+    public string DifficultyLevel { get; private set; }
 
-    public LeaderboardEntry(string name, int score, int difficultyLevel)
+    public LeaderboardEntry(string name, int score, string difficultyLevel)
     {
         Name = name;
         Score = score;

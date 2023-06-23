@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 14433649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a8c954793ab97843aacee82826d2682, type: 3}
+  m_Script: {fileID: 11500000, guid: f4c4bcfad46c0664b9adfc9689b9841f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &16063733
@@ -6882,7 +6882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 1257970013}
   wordChecker: {fileID: 876517443}
-  popupMessage: {fileID: 0}
+  popupMessage: {fileID: 873791998}
 --- !u!4 &1873046151
 Transform:
   m_ObjectHideFlags: 0

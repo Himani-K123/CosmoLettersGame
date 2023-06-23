@@ -652,10 +652,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!50 &373096073
@@ -961,7 +961,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8d6d5293fc92e4525a1d757a4ab7f8ab, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -969,7 +969,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &461132076
@@ -985,6 +985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
+  rocket: {fileID: 21300000, guid: 8d6d5293fc92e4525a1d757a4ab7f8ab, type: 3}
 --- !u!61 &461132077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1087,7 +1088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463080851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.00002, y: -31.999937, z: 1}
+  m_LocalPosition: {x: 68.9, y: -26.1, z: 1}
   m_LocalScale: {x: 9.999999, y: 9.999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1192,10 +1193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!1 &472183440
@@ -1232,10 +1233,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!50 &472183442
@@ -1398,10 +1399,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!50 &758593989
@@ -1699,10 +1700,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!50 &1029870096
@@ -6722,10 +6723,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!50 &1190732846
@@ -6888,10 +6889,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters: 4100420043004400450046004700480049004a004b004c004d004e004f0050005100520053005400550056005700580059005a00
-  minX: -190
-  maxX: 190
-  minY: -94
-  maxY: 94
+  minX: -171
+  maxX: 164
+  minY: -85
+  maxY: 96
   minZ: 1
   maxZ: 1
 --- !u!50 &1560914314

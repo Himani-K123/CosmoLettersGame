@@ -9,11 +9,12 @@ public class ButtonSwap : MonoBehaviour
 
     public void SwapScreen()
     {
+        Debug.Log("Clicked");
         // Convert char list to string
         List<char> charList = ColliderObject.inventory;
-        string charListData = new string(charList.ToArray());
+        Debug.Log(charList);
         GameManage gameManage = GameManage.Instance;
-        gameManage.UserInventory = charListData;
+        gameManage.UserInventory = charList;
 
         SceneManager.LoadScene("ScrabbleGame", LoadSceneMode.Additive);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

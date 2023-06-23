@@ -63,16 +63,24 @@ public bool CheckWord(string word, char[] charList)
     System.Random random = new System.Random();
     string[] congratulatoryMessages = new string[]
     {
-        "Out of this world! Congrats on your achievements in space exploration!",
-        "You're a star! Your hard work and dedication have truly shone through. Congrats!",
-        "You're the Pluto to my heart - always in a special place. Congratulations!",
-        "It's rocket science, but you make it look easy! Congrats on your achievements in space.",
-        "You're a cosmic force to be reckoned with! Congratulations on your success!",
-        "Blast off! You've reached new heights in space exploration. Congrats!",
-        "Your work is truly stellar! Congrats on your achievements in space.",
-        "You're the astronaut to my mission control - together, we can achieve anything. Congrats!",
-        "It's a small step for man, but a giant leap for your career. Congrats on your successes in space exploration!",
-        "You're a true star-gazer! Congrats on your achievements in space."
+        "Out of this world!",
+        "You're a star!",
+        "You're the Pluto to my heart",
+        "It's rocket science, but you make it look easy!",
+        "You're a cosmic force to be reckoned with!",
+        "Blast off!",
+        "Your work is truly stellar!",
+        "It's a small step for man, but a giant leap for your career!",
+        "You're a true star-gazer!",
+        "You're a star among the constellations! Congratulations!",
+        "Your achievements are truly out of this world!",
+        "Rocketing towards success! Keep soaring!",
+        "Your work is stellar, no pun intended!",
+        "You've reached new heights, cosmic congrats!",
+        "Launching into celebration mode, blast off!",
+        "Your talent shines like a supernova!",
+        "A small step for you, a giant leap for success!",
+        "Keep stargazing and chasing your dreams!"
     };
 
     string randomMessage = congratulatoryMessages[random.Next(congratulatoryMessages.Length)];

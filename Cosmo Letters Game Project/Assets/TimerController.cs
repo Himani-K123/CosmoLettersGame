@@ -10,35 +10,35 @@ public class TimerController : MonoBehaviour
     private float timer; // Current value of the timer
     private bool isTimerActive; // Flag to track the timer state
 
-    private TMP_Text timerText; // Reference to the timer text component
-    private Button tmpButton; // Reference to the TextMeshPro button
+    private TMP_Text timerText; // Reference to the timer text component 
 
     private void Start()
+{
+    gameManage = GameManage.Instance;
+
+    if (gameManage != null)
     {
-        gameManage = GameManage.Instance;
-
-        if (gameManage != null)
-        {
-            timerDuration = gameManage.Time;
-        }
-        else
-        {
-            timerDuration = 60f;
-        }
-
-        // Get the reference to the timer text component
-        timerText = GetComponentInChildren<TMP_Text>();
-
-        // Get the reference to the TextMeshPro button component
-        tmpButton = GameObject.Find("Button").GetComponent<Button>();
-
-        // Attach the button click event listener
-        tmpButton.onClick.AddListener(OnButtonClicked);
-
-        // Start the timer
-        timer = timerDuration;
-        isTimerActive = true;
+        timerDuration = gameManage.Time;
     }
+    else
+    {
+        timerDuration = 60f;
+    }
+
+    // Get the reference to the timer text component
+    timerText = GetComponentInChildren<TMP_Text>();
+
+    // Get the reference to the Button component
+    Button tmpButton = GetComponentInChildren<Button>();
+
+    // Attach the button click event listener
+    tmpButton.onClick.AddListener(OnButtonClicked);
+
+    // Start the timer
+    timer = timerDuration;
+    isTimerActive = true;
+}
+
 
     private void Update()
     {
@@ -72,9 +72,16 @@ public class TimerController : MonoBehaviour
     }
 
     // Method to handle the button click event
-    private void OnButtonClicked()
+    // Method to handle the button click event
+private void OnButtonClicked()
+{
+    // Find the ButtonSwap script and call the SwapScreen method
+    ButtonSwap buttonSwap = FindObjectOfType<ButtonSwap>();
+    if (buttonSwap != null)
     {
-        // Place your button click logic here
+        buttonSwap.SwapScreen();
     }
+}
+
 }
 
