@@ -17,8 +17,9 @@ public class UserInventory : MonoBehaviour
         {
             messageText.text += c;
         }*/
+        
         string concat = string.Join(",", ColliderObject.inventory);
  
-        messageText.text = concat;
+        messageText.text = "Inventory: " + concat;
     }
 }

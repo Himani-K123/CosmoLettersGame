@@ -13,8 +13,7 @@ public class TimerManager : MonoBehaviour
     private float timer; // Current value of the timer
     private bool isTimerActive; // Flag to track the timer state
 
-    private TMP_Text timerText; // Reference to the timer text component
-    private Button tmpButton; // Reference to the TextMeshPro button
+    public TMP_Text timerText; // Reference to the timer text component
 
     private void Start()
     {
@@ -28,12 +27,6 @@ public class TimerManager : MonoBehaviour
         {
             timerDuration = 60f;
         }
-
-        // Get the reference to the timer text component
-        timerText = GetComponentInChildren<TMP_Text>();
-
-        // Get the reference to the TextMeshPro button component
-        tmpButton = GameObject.Find("Timer").GetComponent<Button>();
 
         // Attach the button click event listener
 
@@ -60,7 +53,7 @@ public class TimerManager : MonoBehaviour
                 isTimerActive = false;
                 GameManage gameManage = GameManage.Instance;
                 gameManage.Score = Score.Score1;
-                SceneManager.LoadScene("Leaderboard", LoadSceneMode.Additive);
+                SceneManager.LoadScene("Leaderboard", LoadSceneMode.Single);
             }
         }
     }

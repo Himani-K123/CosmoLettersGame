@@ -84,12 +84,12 @@ public bool CheckWord(string word, List<char> charList)
     };
 
     string randomMessage = congratulatoryMessages[random.Next(congratulatoryMessages.Length)];
-    onWordValid?.Invoke(randomMessage); // Invoke the event with the randomly selected message
 
     // Add the word to the set of previous words
     previousWords.Add(word);
-    
     score++;
+
+    onWordValid?.Invoke(randomMessage); // Invoke the event with the randomly selected message
     return true; // Word is made up of characters from the list, is in the dictionary, and is not a repeated word
 }
 
