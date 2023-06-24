@@ -81,6 +81,7 @@ private void OnButtonClicked()
     {
         buttonSwap.SwapScreen();
     }
+    Debug.Log("Clicked3");
 }
 
 }

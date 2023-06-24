@@ -16,7 +16,18 @@ public class GameManage : MonoBehaviour
     private int score;
 
     // Getter for the instance
-    public static GameManage Instance { get { return instance; } }
+    public static GameManage Instance 
+    { 
+        get 
+        { 
+            if (instance == null)
+            {
+                instance = new();
+            }
+            
+            return instance; 
+        } 
+    }
 
     // Getter and setter for the user's name
     public string UserName { get { return userName; } set { userName = value; } }

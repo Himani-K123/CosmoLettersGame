@@ -13,10 +13,13 @@ public class ButtonSwapMultiplayer : MonoBehaviour
         // Convert char list to string
         List<char> charList = ColliderObject.inventory;
         Debug.Log(charList);
-        GameManage gameManage = GameManage.Instance;
-        gameManage.UserInventory = charList;
 
-        SceneManager.LoadScene("Scrabble1Multiplayer", LoadSceneMode.Additive);
+        List<char> charList2 = ColliderObject.inventory2;
+        Debug.Log(charList2);
+
+
+
+        SceneManager.LoadScene("Scrabble1Multiplayer", LoadSceneMode.Single);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Back()

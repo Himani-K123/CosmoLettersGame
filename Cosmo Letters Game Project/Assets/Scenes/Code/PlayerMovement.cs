@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         ColliderObject letter = collision.gameObject.GetComponentInChildren<ColliderObject>();
         if (letter != null)
         {
-            letter.RandomizeLetterAndLocation();
+            letter.RandomizeLetterAndLocation(arrowKeysActive);
         }
     }
 }

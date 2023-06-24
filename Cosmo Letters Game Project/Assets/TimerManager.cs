@@ -15,6 +15,8 @@ public class TimerManager : MonoBehaviour
 
     public TMP_Text timerText; // Reference to the timer text component
 
+    public string screenToLoad;
+
     private void Start()
     {
         gameManage = GameManage.Instance;
@@ -35,11 +37,13 @@ public class TimerManager : MonoBehaviour
         isTimerActive = true;
     }
 
+
     private void Update()
     {
         // Update the timer value only if it's active
         if (isTimerActive)
         {
+            Debug.Log("test1");
             // Update the timer value
             timer -= Time.deltaTime;
 
@@ -49,11 +53,16 @@ public class TimerManager : MonoBehaviour
             // Check if the timer has reached zero
             if (timer <= 0f)
             {
+                Debug.Log("Clicked4");
                 // Stop the timer
                 isTimerActive = false;
                 GameManage gameManage = GameManage.Instance;
+                Debug.Log("clicked5");
+                Debug.Log(gameManage);
+                Debug.Log(Score.Score1);
                 gameManage.Score = Score.Score1;
-                SceneManager.LoadScene("Leaderboard", LoadSceneMode.Single);
+                Debug.Log("test5");
+                SceneManager.LoadScene(screenToLoad, LoadSceneMode.Single);
             }
         }
     }

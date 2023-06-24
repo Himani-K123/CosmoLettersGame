@@ -783,8 +783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.4266, y: 2.4266}
-  m_SizeDelta: {x: 816.3067, y: 234.3368}
+  m_AnchoredPosition: {x: -0.4266, y: -23.2431}
+  m_SizeDelta: {x: 816.3067, y: 285.6763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663812332
 MonoBehaviour:
@@ -927,7 +927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -9}
+  m_AnchoredPosition: {x: 0, y: -4}
   m_SizeDelta: {x: 795.1617, y: 213.1895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1887387008
@@ -951,9 +951,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Use the arrow buttons to control the sprite. Try to collect as many letters
-    as possible as you will use them to create words. After the timer ends you will
-    go to a different screen where you will try to make as many words as possible.
-    Good Luck!
+    as possible as you will use them to create words. Don't be afraid to use the
+    esc key! Press esc to escape. After the timer ends you will go to a different
+    screen where you will try to make as many words as possible. Good Luck!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
   m_sharedMaterial: {fileID: 2736853692784569570, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
@@ -1069,7 +1069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -168}
+  m_AnchoredPosition: {x: -0, y: -215}
   m_SizeDelta: {x: 415.7403, y: 51.2025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980153863
