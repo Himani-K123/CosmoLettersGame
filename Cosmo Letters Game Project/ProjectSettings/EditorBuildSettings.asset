@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LearningMode.unity
     guid: 893278ef2ac2b9c4ab823ba319c530a5
+  - enabled: 1
+    path: Assets/Scenes/AgarMultiplayer.unity
+    guid: f84a31e25ea420e4f9bc0064deae9e46
+  - enabled: 1
+    path: Assets/Scenes/Scrabble1Multiplayer.unity
+    guid: 69b148b81b19bdd478f76e2619e06fbb
+  - enabled: 1
+    path: Assets/Scenes/Scrabble2Multiplayer.unity
+    guid: 7d52dab767853894f91a0074f1a88526
   m_configObjects: {}

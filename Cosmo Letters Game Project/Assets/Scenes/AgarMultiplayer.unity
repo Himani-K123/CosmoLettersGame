@@ -5962,7 +5962,7 @@ GameObject:
   - component: {fileID: 816872665}
   - component: {fileID: 816872664}
   - component: {fileID: 816872663}
-  - component: {fileID: 816872662}
+  - component: {fileID: 816872666}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5991,18 +5991,6 @@ RectTransform:
   m_AnchoredPosition: {x: 116, y: 345}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &816872662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816872660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f28cef37421f0e4a807f195ad4d2b6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &816872663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6047,7 +6035,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 816872662}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonSwap, Assembly-CSharp
         m_MethodName: SwapScreen
         m_Mode: 1
@@ -6097,6 +6085,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816872660}
   m_CullTransparentMesh: 1
+--- !u!114 &816872666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816872660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a005ba853f52841af90b95182847fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &823151462
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,7 +7406,7 @@ GameObject:
   - component: {fileID: 1934230986}
   - component: {fileID: 1934230985}
   - component: {fileID: 1934230984}
-  - component: {fileID: 1934230983}
+  - component: {fileID: 1934230988}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7414,18 +7414,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1934230983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934230982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1f120e480cd8747ac3f2b2b1865ab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1934230984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7515,6 +7503,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1934230988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934230982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb6e7f5e14158d4dacc356bad0a1bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2108242822
 GameObject:
   m_ObjectHideFlags: 0
