@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class WordChecker : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class WordChecker : MonoBehaviour
     public Action<string> onWordInvalid; // Event or delegate to handle invalid word
     public Action<string> onCharacterInvalid; // Event or delegate to handle invalid character
     public static int score = 0;
+    public static int scoresecond = 0;
 
     private HashSet<string> scrabbleDictionary;
 
@@ -87,7 +90,21 @@ public bool CheckWord(string word, List<char> charList)
 
     // Add the word to the set of previous words
     previousWords.Add(word);
-    score++;
+
+    // Create a temporary reference to the current scene.
+	Scene currentScene = SceneManager.GetActiveScene ();
+
+	// Retrieve the name of this scene.
+	string sceneName = currentScene.name;
+
+	if (sceneName == "Scrabble1Multiplayer") 
+	{
+        score++;
+	}
+	else if (sceneName == "Scrabble2Multiplayer")
+	{
+	scoresecond++;
+    }
 
     onWordValid?.Invoke(randomMessage); // Invoke the event with the randomly selected message
     return true; // Word is made up of characters from the list, is in the dictionary, and is not a repeated word

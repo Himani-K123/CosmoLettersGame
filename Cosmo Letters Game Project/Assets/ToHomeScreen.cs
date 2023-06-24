@@ -7,7 +7,7 @@ public class ToHomeScreen : MonoBehaviour
 {
     public void HomeMainMenu()
     {
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Back()

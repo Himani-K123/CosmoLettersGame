@@ -9,17 +9,18 @@ public class toAgarGameScreenMultiplayer: MonoBehaviour
     {
         Debug.Log("Clicked");
         GameManage gameManage = GameManage.Instance;
+        Debug.Log("Clicked 2");
 
-        if (gameManage != null)
-        {
-            gameManage.Time = 30f;
-            gameManage.LOD = "Multiplayer";
-            SceneManager.LoadScene("AgarMultiplayer", LoadSceneMode.Additive);
-        }
-        else
-        {
-            Debug.LogError("GameManage instance is null!");
-        }
+        //if (gameManage != null)
+       /// {
+            //gameManage.Time = 30f;
+            //gameManage.LOD = "Multiplayer";
+            SceneManager.LoadScene("AgarMultiplayer", LoadSceneMode.Single);
+      //  }
+       // else
+       // {
+      //      Debug.LogError("GameManage instance is null!");
+       // }
     }
 
     public void Back()
