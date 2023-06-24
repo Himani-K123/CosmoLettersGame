@@ -31,9 +31,10 @@ public class TextInputHandler : MonoBehaviour
     // Perform any actions with the entered text here
     GameManage gameManage = GameManage.Instance;
 
-    char[] charList = gameManage.UserInventory.ToArray();
+    List<char> charList = ColliderObject.inventory;
     Debug.Log(charList);
 
+    char[] arr = new char [charList.Count];
     bool isMadeOfChars = wordChecker.CheckWord(enteredText, charList);
     Debug.Log("Word is made of characters: " + isMadeOfChars);
 

@@ -26,14 +26,14 @@ public class WordChecker : MonoBehaviour
 
     private HashSet<string> previousWords = new HashSet<string>();
 
-public bool CheckWord(string word, char[] charList)
+public bool CheckWord(string word, List<char> charList)
 {
     bool isMadeOfChars = true;
 
     // Check if the word is made up of the characters in the charList
     foreach (char c in word)
     {
-        if (!charList.Contains(c))
+        if (!charList.Contains(Char.ToUpper(c)))
         {
             isMadeOfChars = false;
             break;

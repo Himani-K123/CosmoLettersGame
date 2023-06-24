@@ -13,5 +13,9 @@ public class UserInventory : MonoBehaviour
         //GameManager gameManager = GameManager.Instance;
         //string name = gameManager.UserInventory;
         messageText.text = name;
+        foreach (char c in ColliderObject.inventory)
+        {
+            messageText.text += c;
+        }
     }
 }

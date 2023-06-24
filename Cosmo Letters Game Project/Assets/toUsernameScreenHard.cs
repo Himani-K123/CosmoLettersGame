@@ -15,6 +15,7 @@ public class toUsernameScreenHard : MonoBehaviour
             gameManage.Time = 15;
             gameManage.LOD = "Hard";
             SceneManager.LoadScene("UsernameScreen", LoadSceneMode.Additive);
+            SceneManager.UnloadScene("PlayMenu");
         }
         else
         {
