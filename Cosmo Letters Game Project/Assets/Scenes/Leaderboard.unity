@@ -542,7 +542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 440, y: 5.3670044}
+  m_AnchoredPosition: {x: 440, y: 101}
   m_SizeDelta: {x: 302.8886, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &469761186
@@ -715,7 +715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 441.5503, y: 100}
+  m_AnchoredPosition: {x: 441.5503, y: 53}
   m_SizeDelta: {x: 302.8886, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535943828
@@ -738,12 +738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Sai - 15
-
-    2. Himani - 13
-
-
-    4. Nikita - 3'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
   m_sharedMaterial: {fileID: 2736853692784569570, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
@@ -878,11 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Sai - 34
-
-    2. Nikita - 31
-
-    3. Himani - 29'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
   m_sharedMaterial: {fileID: 2736853692784569570, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
@@ -1194,16 +1185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Nikita - 24
-
-    2. Nikita - 21
-
-    3. Himani - 19
-
-    4. Nikita
-    - 18
-
-    5. Himani - 15'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
   m_sharedMaterial: {fileID: 2736853692784569570, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
