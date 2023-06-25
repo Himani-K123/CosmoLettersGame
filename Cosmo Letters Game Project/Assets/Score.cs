@@ -12,13 +12,16 @@ public class Score : MonoBehaviour
     void Start()
     {
         Score1 = WordChecker.score;
+        Debug.Log("1");
     }
 
     // Update is called once per frame
     void Update()
     {
         Score1 = WordChecker.score;
+        Debug.Log("2");
         messageText.text = Score1.ToString();
+        Debug.Log("3");
     }
 }
 

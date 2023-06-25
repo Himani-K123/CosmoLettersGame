@@ -97,13 +97,13 @@ public bool CheckWord(string word, List<char> charList)
 	// Retrieve the name of this scene.
 	string sceneName = currentScene.name;
 
-	if (sceneName == "Scrabble1Multiplayer") 
+	if (sceneName == "Scrabble2Multiplayer") 
 	{
-        score++;
+        scoresecond++;
 	}
-	else if (sceneName == "Scrabble2Multiplayer")
+	else 
 	{
-	scoresecond++;
+	    score++;
     }
 
     onWordValid?.Invoke(randomMessage); // Invoke the event with the randomly selected message
