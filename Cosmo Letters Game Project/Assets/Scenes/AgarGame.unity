@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 23394025}
+  messageText2: {fileID: 0}
 --- !u!114 &23394025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,8 +531,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.254708, y: -372.89075}
-  m_SizeDelta: {x: 1414.8906, y: 67.131}
+  m_AnchoredPosition: {x: 1.7845, y: -372.89075}
+  m_SizeDelta: {x: 1438.969, y: 67.131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177527600
 MonoBehaviour:

@@ -11,6 +11,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        WordChecker.score = 0;
         Score1 = WordChecker.score;
         Debug.Log("1");
     }

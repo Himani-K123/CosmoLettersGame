@@ -11,7 +11,7 @@ public class ButtonSwapScrabbleMulti : MonoBehaviour
     {
         Debug.Log("Clicked2");
         
-        SceneManager.LoadScene("Scrabble2Multiplayer", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scrabble2Multiplayer", LoadSceneMode.Additive);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Back()

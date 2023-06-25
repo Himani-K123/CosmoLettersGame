@@ -13,8 +13,10 @@ public class InventoryHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ColliderObject.inventory.Clear();
         charList = ColliderObject.inventory;
         string output = "Inventory: " + string.Join(", ", charList);
+        ColliderObject.inventory2.Clear();
         charList2 = ColliderObject.inventory2;
         string output2 = "Inventory: " + string.Join(", ", charList2);
     }
