@@ -1561,9 +1561,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In the hard option, you will have 30 seconds to obtain letters in the
-    same grid as your opponent. And you will each have 60 seconds to create words
-    with the letters you collected. \n"
+  m_text: "In the multiplayer option, you will have 30 seconds to obtain letters
+    in the same grid as your opponent. And you will each have 60 seconds to create
+    words with the letters you collected. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}
   m_sharedMaterial: {fileID: 2736853692784569570, guid: 53c0764f7bb5345fd91a2f8d81516bab, type: 2}

@@ -21,6 +21,7 @@ public class WordChecker : MonoBehaviour
         LoadScrabbleDictionary();
     }
 
+    // Load the Scrabble dictionary from the provided word list 
     private void LoadScrabbleDictionary()
     {
         string[] words = ScrabbleWordList.text.Split('\n');
@@ -29,90 +30,92 @@ public class WordChecker : MonoBehaviour
 
     private HashSet<string> previousWords = new HashSet<string>();
 
-public bool CheckWord(string word, List<char> charList)
-{
-    bool isMadeOfChars = true;
-
-    // Check if the word is made up of the characters in the charList
-    foreach (char c in word)
+    // Check if a word is valid based on the provided character list and Scrabble dictionary
+    public bool CheckWord(string word, List<char> charList)
     {
-        if (!charList.Contains(Char.ToUpper(c)))
+        bool isMadeOfChars = true;
+
+        // Check if the word is made up of the characters in the charList
+        foreach (char c in word)
         {
-            isMadeOfChars = false;
-            break;
+            if (!charList.Contains(Char.ToUpper(c)))
+            {
+                isMadeOfChars = false;
+                break;
+            }
         }
+
+        if (!isMadeOfChars)
+        {
+            onCharacterInvalid?.Invoke("Character not found in the list");
+            return false; // Character not found in the list
+        }
+
+        // Check if the word is in the Scrabble dictionary
+        if (!scrabbleDictionary.Contains(word.ToUpper()))
+        {
+            onWordInvalid?.Invoke("Word not found in the Scrabble dictionary");
+            return false; // Word not found in the Scrabble dictionary
+        }
+
+        // Check if the word has been inputted before
+        if (IsWordRepeated(word))
+        {
+            onWordInvalid?.Invoke("Word has been entered before");
+            return false; // Word has been entered before
+        }
+
+        System.Random random = new System.Random();
+        string[] congratulatoryMessages = new string[]
+        {
+            "Out of this world!",
+            "You're a star!",
+            "You're the Pluto to my heart",
+            "It's rocket science, but you make it look easy!",
+            "You're a cosmic force to be reckoned with!",
+            "Blast off!",
+            "Your work is truly stellar!",
+            "It's a small step for man, but a giant leap for your career!",
+            "You're a true star-gazer!",
+            "You're a star among the constellations! Congratulations!",
+            "Your achievements are truly out of this world!",
+            "Rocketing towards success! Keep soaring!",
+            "Your work is stellar, no pun intended!",
+            "You've reached new heights, cosmic congrats!",
+            "Launching into celebration mode, blast off!",
+            "Your talent shines like a supernova!",
+            "A small step for you, a giant leap for success!",
+            "Keep stargazing and chasing your dreams!"
+        };
+
+        string randomMessage = congratulatoryMessages[random.Next(congratulatoryMessages.Length)];
+
+        // Add the word to the set of previous words
+        previousWords.Add(word);
+
+        // Create a temporary reference to the current scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        // Increase the score based on the current scene
+        if (sceneName == "Scrabble2Multiplayer") 
+        {
+            scoresecond++;
+        }
+        else 
+        {
+            score++;
+        }
+
+        onWordValid?.Invoke(randomMessage); // Invoke the event with the randomly selected message
+        return true; // Word is made up of characters from the list, is in the dictionary, and is not a repeated word
     }
 
-    if (!isMadeOfChars)
+    // Check if a word has been repeated
+    private bool IsWordRepeated(string word)
     {
-        onCharacterInvalid?.Invoke("Character not found in the list");
-        return false; // Character not found in the list
+        return previousWords.Contains(word);
     }
-
-    // Check if the word is in the Scrabble dictionary
-    if (!scrabbleDictionary.Contains(word.ToUpper()))
-    {
-        onWordInvalid?.Invoke("Word not found in the Scrabble dictionary");
-        return false; // Word not found in the Scrabble dictionary
-    }
-
-    // Check if the word has been inputted before
-    if (IsWordRepeated(word))
-    {
-        onWordInvalid?.Invoke("Word has been entered before");
-        return false; // Word has been entered before
-    }
-
-    System.Random random = new System.Random();
-    string[] congratulatoryMessages = new string[]
-    {
-        "Out of this world!",
-        "You're a star!",
-        "You're the Pluto to my heart",
-        "It's rocket science, but you make it look easy!",
-        "You're a cosmic force to be reckoned with!",
-        "Blast off!",
-        "Your work is truly stellar!",
-        "It's a small step for man, but a giant leap for your career!",
-        "You're a true star-gazer!",
-        "You're a star among the constellations! Congratulations!",
-        "Your achievements are truly out of this world!",
-        "Rocketing towards success! Keep soaring!",
-        "Your work is stellar, no pun intended!",
-        "You've reached new heights, cosmic congrats!",
-        "Launching into celebration mode, blast off!",
-        "Your talent shines like a supernova!",
-        "A small step for you, a giant leap for success!",
-        "Keep stargazing and chasing your dreams!"
-    };
-
-    string randomMessage = congratulatoryMessages[random.Next(congratulatoryMessages.Length)];
-
-    // Add the word to the set of previous words
-    previousWords.Add(word);
-
-    // Create a temporary reference to the current scene.
-	Scene currentScene = SceneManager.GetActiveScene ();
-
-	// Retrieve the name of this scene.
-	string sceneName = currentScene.name;
-
-	if (sceneName == "Scrabble2Multiplayer") 
-	{
-        scoresecond++;
-	}
-	else 
-	{
-	    score++;
-    }
-
-    onWordValid?.Invoke(randomMessage); // Invoke the event with the randomly selected message
-    return true; // Word is made up of characters from the list, is in the dictionary, and is not a repeated word
-}
-
-private bool IsWordRepeated(string word)
-{
-    return previousWords.Contains(word);
-}
-
 }
